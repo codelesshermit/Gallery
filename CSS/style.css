@@ -10,6 +10,7 @@ header{
 }
 nav{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +22,10 @@ nav .navbar{
     font-size: 1.6rem;
     font-weight:bold;
     text-decoration: none;
-    text-transform: uppercase ;
+    text-transform: uppercase;
+}
+.navbar li{
+    display: inline;
 }
 .navbar li a:hover{
     border-bottom: 0.1rem solid #000;
@@ -44,5 +48,5 @@ main{
     transition: all 0.5s ease-in;
 }
 .image:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
