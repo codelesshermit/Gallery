@@ -1,8 +1,11 @@
 
-let image = document.querySelector(".image");
+let image = document.querySelectorAll(".image");
+
+
 image.addEventListener('click', (e)=>{
     console.log(e);
+    let imageAlt = document.querySelector(".image").getAttribute('alt');
     e.preventDefault();
-  let imageAlt = document.querySelector(".image").getAttribute('alt');
-  alert(`you clicked on ${imageAlt}`);
-})
+ 
+  alert(`you clicked on Image named ${imageAlt}`);
+}) 
