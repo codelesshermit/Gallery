@@ -2,10 +2,13 @@
 let image = document.querySelectorAll(".image");
 
 
-image.addEventListener('click', (e)=>{
-    console.log(e);
-    let imageAlt = document.querySelector(".image").getAttribute('alt');
-    e.preventDefault();
+image.forEach((image)=>{
+  image.addEventListener('click', (e)=>{
+  console.log(e);
  
-  alert(`you clicked on Image named ${imageAlt}`);
-}) 
+  e.preventDefault();
+  let imageAlt = document.querySelectorAll(".image").getAttribute('alt');
+
+alert(`you clicked on Image named ${imageAlt}`);
+}) }
+);
