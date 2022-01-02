@@ -4,16 +4,12 @@ let modal = document.querySelector(".modal");
 let modalContent = document.querySelector(".modal-body");
 let closeBtn = document.querySelector(".close");
 
-
-
-
 image.forEach((image)=>{
   image.addEventListener('click', (e)=>{
   console.log(e);
 
   e.preventDefault();
 
-  function openModal(){
     modal.style.display = "block";
   
     let imageLink = image.getAttribute('src');
@@ -32,14 +28,19 @@ image.forEach((image)=>{
   let title = document.querySelector(".title");
   title.append(displayName);
     
-  closeBtn.addEventListener( 'click', function(){  
+ closeBtn.addEventListener( 'click', function(){  
   modal.style.display = "none";
   });
-  }
-  openModal();
+
+  window.onclick = function (){
+    if (event.target == modal){
+      modal.style.display = "none";
+    };
+  };
 //alert(`you clicked on Image named ${displayName}`);
 }) }
 );
+
 
 
 

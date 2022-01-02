@@ -76,6 +76,7 @@ main{
 .modal-header, .modal-footer{
     display: flex;
     align-content:center;
+    align-items: center;
     padding: 0.25rem;
     background-color: #a12;
     color:#000;
