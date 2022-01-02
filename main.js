@@ -13,21 +13,33 @@ image.forEach((image)=>{
 
   e.preventDefault();
 
- modal.style.display = "block";
-
-let imageLink = image.getAttribute('src');
-document.querySelector(".modal-body a").setAttribute("href", imageLink);
-
-let displayName = image.getAttribute('alt');
-let title = document.querySelector(".title");
-title.append(displayName);
+  function openModal(){
+    modal.style.display = "block";
   
- closeBtn.addEventListener( 'click', function(){  
+    let imageLink = image.getAttribute('src');
+    document.querySelector(".modal-body a").setAttribute("href", imageLink);
+  
+   
+   let smallImage = document.createElement('img');
+   smallImage.setAttribute('src', imageLink);
+   smallImage.style.width = "250px";
+   smallImage.style.height = "250px";
+   smallImage.style.margin = "2px";
+   smallImage.style.marginLeft = "42px";
+   modalContent.append(smallImage);
+  
+  let displayName = image.getAttribute('alt');
+  let title = document.querySelector(".title");
+  title.append(displayName);
+    
+  closeBtn.addEventListener( 'click', function(){  
   modal.style.display = "none";
-
-  image.removeEventListener('click', e);
-});
+  });
+  }
+  openModal();
 //alert(`you clicked on Image named ${displayName}`);
 }) }
 );
+
+
 
