@@ -74,8 +74,11 @@ main{
     background: #fefefe;
 }
 .modal-header, .modal-footer{
-    padding: 1.5rem;
-    background-color: #ddd;
+    display: flex;
+    align-content:center;
+    padding: 0.25rem;
+    background-color: #a12;
+    color:#000;
     text-align:center;
     box-sizing: border-box;
  }
@@ -103,10 +106,11 @@ main{
 
 }
  .close{
-     float: right;
-     font-size: 3rem;
-     font-weight: bold;
-     color: #aaa;
+    display:block;
+    margin-left:auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #aaa;
  }
  .close:hover, .close:focus{
      cursor: pointer;
