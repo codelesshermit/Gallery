@@ -30,11 +30,13 @@ image.forEach((image)=>{
     
  closeBtn.addEventListener( 'click', function(){  
   modal.style.display = "none";
+  window.location.reload();
   });
 
   window.onclick = function (){
     if (event.target == modal){
       modal.style.display = "none";
+      window.location.reload();
     };
   };
 //alert(`you clicked on Image named ${displayName}`);
