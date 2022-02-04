@@ -118,3 +118,18 @@ main{
      text-decoration: none;
      color: #000;
  }
+
+ /*responsiveness*/
+ @media(max-width:768px){
+     main{
+         width: 92.5%;
+         margin: auto;
+     }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+ }
