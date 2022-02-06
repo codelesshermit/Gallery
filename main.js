@@ -18,7 +18,7 @@ image.forEach((image)=>{
    
    let smallImage = document.createElement('img');
    smallImage.setAttribute('src', imageLink);
-   smallImage.style.width = "250px";
+   smallImage.style.maxWidth = "75%";
    smallImage.style.height = "250px";
    smallImage.style.margin = "2px";
    smallImage.style.marginLeft = "42px";
