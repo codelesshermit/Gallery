@@ -43,6 +43,11 @@ image.forEach((image)=>{
 }) }
 );
 
+//let download = document.querySelector("#thumbs-up").getAttribute('src');
+let like = document.querySelector("#thumbs-up");
+
+
+
 
 
 

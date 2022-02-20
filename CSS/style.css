@@ -49,9 +49,6 @@ main{
     height: 30rem;
     transition: all 0.25s ease-in;
 }
-.image:hover{
-    transform: scale(1.1);
-}
 
 /*modal styles*/
 .modal{
